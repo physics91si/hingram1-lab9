@@ -1,14 +1,21 @@
 #!/usr/bin/python
 import sys
+import pdb
 
 #Python script that returns the roots of a quadratic equation
 #of the form a*x^2 + b*x + c = 0
 #Enter values for a, b, and c in the command line
 #e.g. run: >python quadratic.py 1 2 -15
+
 def main():
+    pdb.set_trace()
     a = sys.argv[1]
     b = sys.argv[2]
     c = sys.argv[3]
+    a = float(a)
+    b = float(b)
+    c = float(c)
+
     x1, x2 = find_roots(a, b, c)
     print ("This is x1: %f" %x1)
     print ("This is x2: %f" %x2)
